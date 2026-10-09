@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimukthi Prabath | Defensive Cybersecurity &amp; SOC Analyst</title>
+    <!-- Google Fonts: Fira Code & Orbitron for Cyber Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Matrix / Cyber Grid -->
+    <canvas id="cyber-canvas"></canvas>
+
+    <!-- Scanline effect overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="prompt-symbol">&gt;</span> <span class="logo-text">BLUE<span class="neon-accent">_DEFENDER</span></span>
+            </a>
+
+            <div class="system-status">
+                <span class="status-dot"></span>
+                <span class="status-text">STATUS: <span class="neon-cyan">DEFENSIVE SHIELD ACTIVE</span></span>
+            </div>
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#about" class="nav-item"><span class="nav-num">01.</span>//Identity</a>
+                <a href="#certifications" class="nav-item"><span class="nav-num">02.</span>//Certifications</a>
+                <a href="#skills" class="nav-item"><span class="nav-num">03.</span>//Blue_Arsenal</a>
+                <a href="#projects" class="nav-item"><span class="nav-num">04.</span>//Labs_&amp;_Ops</a>
+                <a href="#terminal-section" class="nav-item"><span class="nav-num">05.</span>//Terminal</a>
+                <a href="#contact" class="nav-item cta-link"><span class="nav-num">&gt;</span>Contact_Me</a>
+            </nav>
+
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-terminal"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="cyber-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>BLUE TEAM // SOC &amp; DEFENSIVE SECURITY PRACTITIONER</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Vimukthi Prabath <br>
+                    <span class="neon-text" data-text="DEFENSIVE CYBERSECURITY">DEFENSIVE CYBERSECURITY</span>
+                </h1>
+
+                <div class="typewriter-container">
+                    <span class="cli-prompt">[soc-analyst@blue-core ~]#</span>
+                    <span id="typewriter" class="typewriter-text"></span>
+                    <span class="cursor">_</span>
+                </div>
+
+                <p class="hero-desc">
+                    Aspiring Defensive Cybersecurity Engineer &amp; SOC Analyst focused on threat detection, network hardening, incident response, and cloud security. Constantly expanding defensive capabilities through practical hands-on labs on TryHackMe and certified industry pathways.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#certifications" class="cyber-btn primary">
+                        <i class="fa-solid fa-certificate"></i> View Certifications
+                    </a>
+                    <a href="https://tryhackme.com/p/vimukthivpk123" target="_blank" rel="noopener noreferrer" class="cyber-btn secondary">
+                        <i class="fa-solid fa-cube"></i> TryHackMe Profile
+                    </a>
+                    <a href="#contact" class="cyber-btn outline">
+                        <i class="fa-solid fa-paper-plane"></i> Transmit Message
+                    </a>
+                </div>
+
+                <!-- Live Metrics Counter Bar -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="6">0</span><span class="plus">+</span>
+                        <span class="stat-label">Verified Certs &amp; Badges</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="4">0</span><span class="plus">/9</span>
+                        <span class="stat-label">Google Cyber Specialization</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="100">0</span><span class="plus">%</span>
+                        <span class="stat-label">Dedication to Blue Teaming</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="24">0</span><span class="plus">/7</span>
+                        <span class="stat-label">Defensive Threat Posture</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// IDENTITY_REPORT</span>
+                    <h2 class="section-title">About Me &amp; Defense Philosophy</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card terminal-card">
+                        <div class="card-header">
+                            <span class="circle red"></span>
+                            <span class="circle yellow"></span>
+                            <span class="circle green"></span>
+                            <span class="card-title">vimukthi_profile.json</span>
+                        </div>
+                        <div class="card-body">
+                            <pre class="json-code">
+<code>{
+  <span class="key">"name"</span>: <span class="str">"Vimukthi Prabath Koswaththa"</span>,
+  <span class="key">"specialization"</span>: <span class="str">"Defensive Security / SOC Analyst"</span>,
+  <span class="key">"pathway"</span>: <span class="str">"Google Cybersecurity Professional Certificate"</span>,
+  <span class="key">"interests"</span>: [<span class="str">"Network Defense"</span>, <span class="str">"SIEM &amp; Logs"</span>, <span class="str">"Linux Hardening"</span>, <span class="str">"Cloud Security"</span>],
+  <span class="key">"philosophy"</span>: <span class="str">"Strong defense requires understanding the adversary"</span>,
+  <span class="key">"location"</span>: <span class="str">"Rathnapura, Sri Lanka"</span>,
+  <span class="key">"email"</span>: <span class="str">"vimukthivpk123@gmail.com"</span>,
+  <span class="key">"status"</span>: <span class="str">"Actively training &amp; open to security opportunities"</span>
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="about-text-content">
+                        <h3>Guarding Digital Infrastructure</h3>
+                        <p>
+                            I am a cybersecurity enthusiast specializing in <strong>Defensive Security (Blue Team)</strong> and <strong>Security Operations (SOC)</strong>. My focus is identifying risks, fortifying network perimeters, analyzing security logs, and managing security incident lifecycles.
+                        </p>
+                        <p>
+                            Currently completing the prestigious <strong>Google Cybersecurity Professional Certificate</strong> on Coursera alongside rigorous practical security challenges on <strong>TryHackMe</strong>. I have also achieved certification in <strong>AWS Cloud Technical Essentials</strong> and <strong>Google AI Essentials</strong> to bridge cloud defense and modern AI technologies.
+                        </p>
+
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-shield-virus neon-icon"></i>
+                                <div>
+                                    <h4>Defensive Operations &amp; SOC</h4>
+                                    <p>SIEM log telemetry, alert monitoring, incident response frameworks, and risk mitigation.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-network-wired neon-icon"></i>
+                                <div>
+                                    <h4>Network &amp; System Hardening</h4>
+                                    <p>TCP/IP protocols, firewall policies, intrusion detection, Linux system administration, and SQL safety.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fa-solid fa-cloud-shield neon-icon"></i>
+                                <div>
+                                    <h4>Cloud &amp; Emerging Tech Security</h4>
+                                    <p>Foundations in AWS Cloud infrastructure and safe application of AI in modern workflows.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications & Credentials Section (Prominent) -->
+        <section id="certifications" class="certs-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// ACCREDITATIONS_AND_CERTIFICATES</span>
+                    <h2 class="section-title">Verified Certifications &amp; Courses</h2>
+                    <p class="section-subtitle">Official certificates completed and currently being undertaken on Coursera, Credly, and AWS.</p>
+                </div>
+
+                <!-- Google Cybersecurity Specialization Progress Bar -->
+                <div class="cert-progress-box">
+                    <div class="progress-info">
+                        <div class="progress-title">
+                            <i class="fa-brands fa-google neon-green"></i>
+                            <span>Google Cybersecurity Professional Certificate (In Progress: 4/8 Completed)</span>
+                        </div>
+                        <span class="progress-badge">50% Completed</span>
+                    </div>
+                    <div class="progress-bar-bg">
+                        <div class="progress-bar-fill" style="width: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-icon google-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <span class="cert-tag">Google Cybersecurity</span>
+                        <h4>Foundations of Cybersecurity</h4>
+                        <p class="cert-issuer">Google // Coursera</p>
+                        <p class="cert-summary">Core infosec principles, CIA triad, security ethics, and threat landscapes.</p>
+                        <a href="https://coursera.org/share/584f8d0c98e41880c2213cd284639f96" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-icon google-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                        <span class="cert-tag">Google Cybersecurity</span>
+                        <h4>Play It Safe: Manage Security Risks</h4>
+                        <p class="cert-issuer">Google // Coursera</p>
+                        <p class="cert-summary">Risk management frameworks (NIST CSF), security audits, and SIEM/SOAR fundamentals.</p>
+                        <a href="https://coursera.org/share/ea490ab998c0dad6b74623b351546819" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-icon google-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <span class="cert-tag">Google Cybersecurity</span>
+                        <h4>Connect and Protect: Networks and Network Security</h4>
+                        <p class="cert-issuer">Google // Coursera</p>
+                        <p class="cert-summary">Network architecture, TCP/IP &amp; OSI models, packet inspection, firewalls, and VPNs.</p>
+                        <a href="https://coursera.org/share/7d090efaaa8ec069a4dc1345c6f74bef" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+
+                    <!-- Cert 4 -->
+                    <div class="cert-card">
+                        <div class="cert-icon google-icon"><i class="fa-solid fa-terminal"></i></div>
+                        <span class="cert-tag">Google Cybersecurity</span>
+                        <h4>Tools of the Trade: Linux and SQL</h4>
+                        <p class="cert-issuer">Google // Coursera</p>
+                        <p class="cert-summary">Linux shell navigation, user permissions, process management, and SQL database querying.</p>
+                        <a href="https://coursera.org/share/f3a91c5105345aa3e2647db8e1052009" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+
+                    <!-- Cert 5 -->
+                    <div class="cert-card highlight-card">
+                        <div class="cert-icon aws-icon"><i class="fa-brands fa-aws"></i></div>
+                        <span class="cert-tag aws-tag">Cloud Infrastructure</span>
+                        <h4>AWS Cloud Technical Essentials</h4>
+                        <p class="cert-issuer">Amazon Web Services // Coursera</p>
+                        <p class="cert-summary">Core AWS services: IAM security, VPC networking, EC2, S3 storage, and cloud architectures.</p>
+                        <a href="https://coursera.org/share/350b9ff51be9a40049a2b813ee6f775d" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+
+                    <!-- Cert 6 -->
+                    <div class="cert-card highlight-card">
+                        <div class="cert-icon ai-icon"><i class="fa-solid fa-brain"></i></div>
+                        <span class="cert-tag ai-tag">Artificial Intelligence</span>
+                        <h4>Google AI Essentials</h4>
+                        <p class="cert-issuer">Google // Coursera</p>
+                        <p class="cert-summary">Responsible AI usage, generative AI tools, prompt engineering, and modern tech workflows.</p>
+                        <a href="https://coursera.org/share/ba86dc65f8d29e2120bea02685a02d0b" target="_blank" rel="noopener noreferrer" class="cert-link">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <div class="credly-cta">
+                    <p><i class="fa-solid fa-award neon-cyan"></i> Looking for verified digital badges?</p>
+                    <a href="https://www.credly.com/users/vimukthi-prabath.7c563d3c" target="_blank" rel="noopener noreferrer" class="cyber-btn secondary">
+                        <i class="fa-solid fa-certificate"></i> View Credly Transcripts &amp; Badges
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Defensive Skills & Arsenal Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// BLUE_TEAM_ARSENAL</span>
+                    <h2 class="section-title">Defensive Skills &amp; Security Tools</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="skill-category">
+                        <div class="cat-header">
+                            <i class="fa-solid fa-tower-observation"></i>
+                            <h3>Defensive &amp; SOC Core</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>Security Information &amp; Event (SIEM)</span> <span class="level">Hands-on</span></li>
+                            <li><span>NIST Cybersecurity Framework</span> <span class="level">Certified</span></li>
+                            <li><span>Incident Response Lifecycle</span> <span class="level">Proficient</span></li>
+                            <li><span>Log Analysis &amp; Auditing</span> <span class="level">Proficient</span></li>
+                            <li><span>CIA Triad &amp; Security Principles</span> <span class="level">Advanced</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="skill-category">
+                        <div class="cat-header">
+                            <i class="fa-solid fa-network-wired"></i>
+                            <h3>Network &amp; Systems</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>TCP/IP, UDP, DNS, DHCP</span> <span class="level">Certified</span></li>
+                            <li><span>Firewalls, IDS/IPS, VPNs</span> <span class="level">Proficient</span></li>
+                            <li><span>Packet Inspection &amp; Wireshark</span> <span class="level">Skilled</span></li>
+                            <li><span>Linux OS &amp; CLI Commands</span> <span class="level">Certified</span></li>
+                            <li><span>SQL Security &amp; Database Queries</span> <span class="level">Certified</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="skill-category">
+                        <div class="cat-header">
+                            <i class="fa-brands fa-aws"></i>
+                            <h3>Cloud &amp; Infrastructure</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>AWS Identity &amp; Access (IAM)</span> <span class="level">Certified</span></li>
+                            <li><span>AWS Virtual Private Cloud (VPC)</span> <span class="level">Certified</span></li>
+                            <li><span>AWS EC2 &amp; S3 Security</span> <span class="level">Certified</span></li>
+                            <li><span>Cloud Shared Responsibility Model</span> <span class="level">Advanced</span></li>
+                            <li><span>Cloud Monitoring &amp; Telemetry</span> <span class="level">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="skill-category">
+                        <div class="cat-header">
+                            <i class="fa-solid fa-brain"></i>
+                            <h3>Emerging Tech &amp; Labs</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><span>TryHackMe Defensive Rooms</span> <span class="level">Active</span></li>
+                            <li><span>Google AI Essentials &amp; Prompting</span> <span class="level">Certified</span></li>
+                            <li><span>Threat Classification &amp; Vectors</span> <span class="level">Proficient</span></li>
+                            <li><span>Zero Trust Architecture Principles</span> <span class="level">Knowledge</span></li>
+                            <li><span>Bash &amp; Command-line Automation</span> <span class="level">Developing</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Practical Labs Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// HANDS_ON_DEFENSE_LABS</span>
+                    <h2 class="section-title">Practical Labs &amp; Security Case Studies</h2>
+                    <p class="section-subtitle">Real-world scenarios, network security investigations, and ongoing security writeups.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-cube"></i> TryHackMe Lab</span>
+                            <span class="project-status">ACTIVE</span>
+                        </div>
+                        <h3 class="project-title">TryHackMe Blue Team &amp; SOC Rooms</h3>
+                        <p class="project-desc">
+                            Hands-on practice completing interactive defensive security rooms on TryHackMe, covering network analysis, incident handling, phishing analysis, and system log investigation.
+                        </p>
+                        <div class="tech-tags">
+                            <span>TryHackMe</span>
+                            <span>Network Defense</span>
+                            <span>Wireshark</span>
+                            <span>SIEM Basics</span>
+                            <span>Linux CLI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://tryhackme.com/p/vimukthivpk123" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-solid fa-cube"></i> View THM Profile</a>
+                            <a href="https://github.com/VimukthiPrabath" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-brands fa-github"></i> GitHub Notes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-shield"></i> Defensive Lab</span>
+                            <span class="project-status">COMPLETED</span>
+                        </div>
+                        <h3 class="project-title">Linux System Hardening &amp; SQL Data Filter</h3>
+                        <p class="project-desc">
+                            Utilized Linux terminal commands, bash scripts, and SQL queries to analyze server event access logs, manage file permissions (chmod/chown), and isolate suspicious user activity.
+                        </p>
+                        <div class="tech-tags">
+                            <span>Linux CLI</span>
+                            <span>SQL Filters</span>
+                            <span>File Permissions</span>
+                            <span>Bash</span>
+                            <span>Google Cyber</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coursera.org/share/f3a91c5105345aa3e2647db8e1052009" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-solid fa-certificate"></i> Course Credential</a>
+                            <a href="https://github.com/VimukthiPrabath" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-solid fa-network-wired"></i> Network Security</span>
+                            <span class="project-status">COMPLETED</span>
+                        </div>
+                        <h3 class="project-title">Network Packet Inspection &amp; Defense</h3>
+                        <p class="project-desc">
+                            Investigated TCP/IP packets, analyzed network port communication, and structured firewall rules and subnetting segmentation to protect against unauthorized lateral movement.
+                        </p>
+                        <div class="tech-tags">
+                            <span>TCP/IP</span>
+                            <span>Subnetting</span>
+                            <span>Firewall Rules</span>
+                            <span>DNS Security</span>
+                            <span>Coursera Lab</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coursera.org/share/7d090efaaa8ec069a4dc1345c6f74bef" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-solid fa-certificate"></i> Course Credential</a>
+                            <a href="#terminal-section" class="link-btn"><i class="fa-solid fa-terminal"></i> CLI Demo</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card">
+                        <div class="project-header">
+                            <span class="project-type"><i class="fa-brands fa-aws"></i> Cloud Security</span>
+                            <span class="project-status">COMPLETED</span>
+                        </div>
+                        <h3 class="project-title">AWS Secure Infrastructure Architecture</h3>
+                        <p class="project-desc">
+                            Configured secure AWS architectures leveraging IAM least-privilege policies, isolated Virtual Private Clouds (VPCs), and secure S3 bucket policies for confidential asset storage.
+                        </p>
+                        <div class="tech-tags">
+                            <span>AWS IAM</span>
+                            <span>VPC Isolation</span>
+                            <span>Amazon EC2</span>
+                            <span>Amazon S3</span>
+                            <span>Least Privilege</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://coursera.org/share/350b9ff51be9a40049a2b813ee6f775d" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-solid fa-certificate"></i> AWS Credential</a>
+                            <a href="https://github.com/VimukthiPrabath" target="_blank" rel="noopener noreferrer" class="link-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Cybersecurity Terminal Section -->
+        <section id="terminal-section" class="terminal-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// INTERACTIVE_CLI_CONSOLE</span>
+                    <h2 class="section-title">Defensive Operator Console</h2>
+                    <p class="section-subtitle">Type commands like <code class="inline-code">help</code>, <code class="inline-code">certs</code>, <code class="inline-code">skills</code>, <code class="inline-code">about</code>, <code class="inline-code">status</code>, <code class="inline-code">contact</code>, or <code class="inline-code">scan</code>.</p>
+                </div>
+
+                <div class="terminal-window">
+                    <div class="terminal-bar">
+                        <div class="terminal-buttons">
+                            <span class="term-btn red"></span>
+                            <span class="term-btn yellow"></span>
+                            <span class="term-btn green"></span>
+                        </div>
+                        <div class="terminal-title">blue-shell // vimukthi@soc-workstation:~</div>
+                        <div class="terminal-actions">
+                            <button id="clear-term-btn" title="Clear Terminal"><i class="fa-solid fa-eraser"></i> Clear</button>
+                        </div>
+                    </div>
+
+                    <div class="terminal-screen" id="terminal-screen">
+                        <div class="terminal-output" id="terminal-output">
+                            <p class="term-line banner-line">========================================================</p>
+                            <p class="term-line banner-line"> VIMUKTHI PRABATH // DEFENSIVE SECURITY CONSOLE v2.6.0</p>
+                            <p class="term-line banner-line"> SPECIALIZATION: BLUE TEAM / SOC ANALYST / CLOUD SECURITY</p>
+                            <p class="term-line banner-line"> SYSTEM STATUS: SHIELD OPERATIONAL | LOCATION: RATHNAPURA</p>
+                            <p class="term-line banner-line">========================================================</p>
+                            <p class="term-line">Type <span class="highlight">help</span> to view all commands or <span class="highlight">certs</span> to view verified credentials.</p>
+                        </div>
+
+                        <form class="terminal-input-row" id="terminal-form">
+                            <span class="term-prompt"><span class="user-part">vimukthi@blue-portfolio</span>:<span class="dir-part">~</span>$</span>
+                            <input type="text" id="terminal-input" class="term-input" autocomplete="off" spellcheck="false" placeholder="type a command (e.g. certs, help)...">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// SECURE_TRANSMISSION</span>
+                    <h2 class="section-title">Initiate Contact</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Let's Connect &amp; Collaborate</h3>
+                        <p>
+                            Interested in discussing defensive security, SOC operations, entry-level opportunities, or collaborating on security projects? Feel free to reach out directly.
+                        </p>
+
+                        <div class="info-blocks">
+                            <div class="info-block">
+                                <i class="fa-solid fa-envelope neon-icon"></i>
+                                <div>
+                                    <span class="info-label">Direct Email</span>
+                                    <span class="info-val"><a href="mailto:vimukthivpk123@gmail.com" class="neon-link">vimukthivpk123@gmail.com</a></span>
+                                </div>
+                            </div>
+
+                            <div class="info-block">
+                                <i class="fa-solid fa-location-dot neon-icon"></i>
+                                <div>
+                                    <span class="info-label">Base Location</span>
+                                    <span class="info-val">Rathnapura, Sri Lanka (Available Remote &amp; Onsite)</span>
+                                </div>
+                            </div>
+
+                            <div class="info-block">
+                                <i class="fa-solid fa-certificate neon-icon"></i>
+                                <div>
+                                    <span class="info-label">Credly Digital Badges</span>
+                                    <span class="info-val"><a href="https://www.credly.com/users/vimukthi-prabath.7c563d3c" target="_blank" rel="noopener noreferrer" class="neon-link">credly.com/users/vimukthi-prabath</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/VimukthiPrabath" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/vimukthi-prabath-koswaththa-4050b7247/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://tryhackme.com/p/vimukthivpk123" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TryHackMe"><i class="fa-solid fa-cube"></i></a>
+                            <a href="https://www.credly.com/users/vimukthi-prabath.7c563d3c" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Credly"><i class="fa-solid fa-award"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-title">
+                            <i class="fa-solid fa-envelope-shield"></i>
+                            <span>SEND_MESSAGE_TRANSMISSION</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-name">&gt; SENDER_NAME / CALLSIGN</label>
+                            <input type="text" id="contact-name" name="name" required placeholder="e.g. Security Recruiter / Colleague">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-email">&gt; SENDER_EMAIL</label>
+                            <input type="email" id="contact-email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-subject">&gt; TOPIC / SUBJECT</label>
+                            <select id="contact-subject" name="subject">
+                                <option value="SOC Opportunity">SOC Analyst / Cybersecurity Opportunity</option>
+                                <option value="Project Collaboration">Security Project Collaboration</option>
+                                <option value="Mentorship / Networking">Networking &amp; Discussion</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact-message">&gt; TRANSMISSION_PAYLOAD</label>
+                            <textarea id="contact-message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="cyber-btn primary full-width">
+                            <i class="fa-solid fa-paper-plane"></i> TRANSMIT PACKET
+                        </button>
+                        
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Vimukthi Prabath Koswaththa // Defensive Cybersecurity &amp; SOC Analyst.</p>
+            <div class="footer-status">
+                <span class="status-indicator"></span> BLUE TEAM DEFENSE | SECURED IN SRI LANKA
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
