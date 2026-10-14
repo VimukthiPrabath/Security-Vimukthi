@@ -221,8 +221,10 @@ Verified Credentials:
   2. Google: Play It Safe - Manage Security Risks
   3. Google: Connect and Protect - Networks and Network Security
   4. Google: Tools of the Trade - Linux and SQL
-  5. AWS: AWS Cloud Technical Essentials
-  6. Google: Google AI Essentials
+  5. Google: Assets, Threats, and Vulnerabilities
+  6. Google: Sound the Alarm: Detection and Response
+  7. AWS: AWS Cloud Technical Essentials
+  8. Google: Google AI Essentials
   * Credly Profile: credly.com/users/vimukthi-prabath.7c563d3c
 `,
         skills: () => `
