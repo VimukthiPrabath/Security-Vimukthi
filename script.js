@@ -74,7 +74,7 @@ function initTypewriter() {
     const phrases = [
         "Defensive Cybersecurity & SOC Analyst",
         "Blue Team & Network Security Practitioner",
-        "Google Cybersecurity Specialization Scholar",
+        "Google Certified Cybersecurity Professional",
         "AWS Cloud Infrastructure & Security Enthusiast",
         "TryHackMe Security Enthusiast"
     ];
@@ -216,17 +216,27 @@ Available Security Commands:
 [+] LOCATION: Rathnapura, Sri Lanka
 `,
         certs: () => `
-Verified Credentials:
+[+] GOOGLE CYBERSECURITY PROFESSIONAL CERTIFICATE (100% COMPLETED)
+  - Credly Badge: https://www.credly.com/badges/ba0e4b7e-e754-46e3-ab66-2e7dccd81444/public_url
+  - Coursera Specialization: https://coursera.org/share/955a29a779410373f000f7fd67dabd31
+
+Verified Specialization Modules (9/9):
   1. Google: Foundations of Cybersecurity
   2. Google: Play It Safe - Manage Security Risks
   3. Google: Connect and Protect - Networks and Network Security
   4. Google: Tools of the Trade - Linux and SQL
   5. Google: Assets, Threats, and Vulnerabilities
-  6. Google: Sound the Alarm: Detection and Response
-  7. AWS: AWS Cloud Technical Essentials
-  8. Google: Google AI Essentials
-  * Credly Profile: credly.com/users/vimukthi-prabath.7c563d3c
+  6. Google: Sound the Alarm - Detection and Response
+  7. Google: Automate Cybersecurity Tasks with Python
+  8. Google: Put It to Work - Prepare for Cybersecurity Jobs
+  9. Google: Accelerate Your Job Search with AI
+
+Additional Cloud & AI Credentials:
+  10. AWS: AWS Cloud Technical Essentials
+  11. Google: Google AI Essentials
+  * Full Credly Profile: https://www.credly.com/users/vimukthi-prabath.7c563d3c
 `,
+
         skills: () => `
 [+] DEFENSIVE: SOC Foundations, NIST CSF, SIEM, Incident Response, Log Analysis
 [+] NETWORK: TCP/IP, OSI Layers, Firewalls, Wireshark, Port Security, VPN
