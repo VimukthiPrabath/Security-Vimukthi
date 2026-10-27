@@ -953,6 +953,25 @@ section {
     border-color: rgba(168, 85, 247, 0.3);
 }
 
+.cert-card.thm-cert-card {
+    border-color: rgba(235, 75, 75, 0.35);
+}
+
+.cert-card.thm-cert-card:hover {
+    border-color: #eb4b4b;
+    box-shadow: 0 8px 25px rgba(235, 75, 75, 0.25);
+}
+
+.cert-icon.thm-icon {
+    color: #eb4b4b;
+}
+
+.cert-tag.thm-tag {
+    background: rgba(235, 75, 75, 0.12);
+    color: #eb4b4b;
+    border-color: rgba(235, 75, 75, 0.35);
+}
+
 .cert-card h4 {
     color: #fff;
     font-size: 1.1rem;

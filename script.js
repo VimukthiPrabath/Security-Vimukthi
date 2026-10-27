@@ -231,9 +231,10 @@ Verified Specialization Modules (9/9):
   8. Google: Put It to Work - Prepare for Cybersecurity Jobs
   9. Google: Accelerate Your Job Search with AI
 
-Additional Cloud & AI Credentials:
+Additional Cloud, AI & Security Pathways:
   10. AWS: AWS Cloud Technical Essentials
   11. Google: Google AI Essentials
+  12. TryHackMe: Pre Security Learning Path (Cert: https://tryhackme.com/certificate/THM-TM8JEQB7NV)
   * Full Credly Profile: https://www.credly.com/users/vimukthi-prabath.7c563d3c
 `,
 
@@ -251,7 +252,9 @@ Additional Cloud & AI Credentials:
 `,
         thm: () => `
 [+] TRYHACKME PROFILE: https://tryhackme.com/p/vimukthivpk123
-[+] STATUS: Actively solving Defensive, Networking & Linux security challenges.
+[+] CERTIFICATION: Pre Security Learning Path (Verified)
+    Certificate URL: https://tryhackme.com/certificate/THM-TM8JEQB7NV
+[+] STATUS: Actively solving Defensive, Networking & Linux security rooms.
 `,
         whoami: () => `
 vimukthi@blue-portfolio: uid=1000(vimukthi) gid=1000(soc_analyst)
